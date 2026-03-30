@@ -1,0 +1,21 @@
+{
+	"name": "LS_SQLSERVER_TBLLKCUP",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"server": "adf-dev-sql1.database.windows.net",
+			"database": "GO",
+			"encrypt": "mandatory",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "adfdev",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJhYWIyNDUwMy04ZGFmLTQxYzctODUyZC05ZDU4YzNmZTE1NjAiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "integrationRuntime1",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
